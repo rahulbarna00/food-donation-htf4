@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 262.1 83.3% 57.8%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 262.1 83.3% 57.8%;
+    --radius: 0.5rem;
+    --upload: #F4FAFA;
+    --wordborder:#F3F4F6;
+    --wordbg:rgba(243,244,246,0.5)
+      
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 263.4 70% 50.4%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 263.4 70% 50.4%;
+    --upload-foreground: #DDE4FF;
+    --wordborder-foreground:rgb(31,41,55);
+    --wordbg-foreground:rgba(31,41,55,0.5);
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'BonFoyage';
+  src: url('/fonts/bfd.otf');
+}
+
+@font-face {
+  font-family: 'COGA';
+  src: url('/fonts/CGRR.woff');
+}
+
+@font-face {
+  font-family: 'Reco';
+  src: url('/fonts/Recoleta.ttf');
+}
+
+@font-face {
+  font-family: 'Mona';
+  src: url('/fonts/MSfont.ttf');
+}
+
+img{
+  user-select: none;
+}
+
+button{
+  user-select: none;
+}
+
+body{
+  width: 100%;
+}
+
+.landing{
+  width: 100%;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+
+.span{
+  color: red;
+}
+
+.translateSelect{
+  font-size: 0.8rem !important;
+}
+.translateSelect::placeholder{
+  font-size: 0.8rem !important;
+  opacity: 0.5 !important;
+}
+
+.accordionCOMP::-webkit-scrollbar {
+  display: none;
+}
+
+.textarea::-webkit-scrollbar-track {
+  background-color: transparent;  
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+}
+
+.document::-webkit-scrollbar {
+  display: none;
+}
+
+.logofont{
+  font-family: 'Reco' , sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.7px;
+}
+
+
+.smallLogofont{
+  font-family:  'Reco' , sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+}
+
+
+#waveform ::part(cursor){
+  display: none !important;
+  /* width: 0 !important; */
+  width: 30px !important;
+}
+
+.ulcontent li{
+  transition: 0.1s ease;
+}
+
+.ulcontent li:hover{
+  transform: scale(1.009);
+}
+
+.COGAelement{
+  font-family: 'COGA' , sans-serif;
+}
+
+
+.poppinsFonts{
+  font-family: 'Poppins',sans-serif;
+}
+
+.MonaSans{
+  font-family:  'Mona' , sans-serif;
+}
